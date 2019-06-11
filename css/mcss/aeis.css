@@ -1,0 +1,682 @@
+html {
+  background: #ededed;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.head {
+  height: .94rem;
+}
+.head-fixed {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.mHead {
+  width: 100%;
+  background: #333;
+  position: relative;
+}
+.mHead img {
+  display: block;
+  width: 100%;
+}
+.mHead .nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14.6%;
+}
+.mHead .nav img {
+  display: block;
+  width: 100%;
+}
+.mHead .nav .menu_list {
+  display: none;
+  position: absolute;
+  top: .8rem;
+  left: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: .12rem;
+  width: 2.08rem;
+  height: 3.97rem;
+  float: right;
+}
+.mHead .nav .menu_list li {
+  height: .56rem;
+  text-align: center;
+  line-height: .56rem;
+}
+.mHead .nav .menu_list li a {
+  display: block;
+  text-align: center;
+  line-height: .56rem;
+  color: #fff;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.mHead .nav .menu_list .current_page {
+  color: #eca742;
+}
+.mHead .nav .menu_list .current_page a {
+  color: #eca742;
+}
+.mHead .telHead {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 41.8%;
+  height: 100%;
+  float: right;
+}
+.mHead .telHead a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.mHead .telHead a img {
+  display: block;
+  width: 100%;
+}
+.banner {
+  width: 100%;
+}
+.banner img {
+  display: block;
+  width: 100%;
+}
+.titleAll {
+  width: 100%;
+  height: 1.6rem;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.titleAll .know,
+.titleAll .adv,
+.titleAll .team {
+  display: block;
+  width: 28.67%;
+  height: .57rem;
+  font-size: .12rem;
+  color: #d9252b;
+  text-align: center;
+  line-height: .57rem;
+}
+.titleAll .sel {
+  color: #fff;
+}
+.intro {
+  width: 100%;
+  position: relative;
+}
+.intro .inTit {
+  width: 100%;
+  padding-top: .32rem;
+  color: #fff;
+  text-align: center;
+  height: 2.3rem;
+  background: #b92a22;
+}
+.intro .inTit .titFir {
+  font-size: .175rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: .16rem;
+}
+.intro .inTit .titSm {
+  font-size: .13rem;
+}
+.intro .con {
+  width: 93.3%;
+  position: absolute;
+  top: 25%;
+  left: 3%;
+  background: #fff;
+  padding: .2rem .15rem;
+  border-radius: .05rem;
+  box-shadow: .01rem .03rem .1rem .02rem #eddcdb;
+}
+.intro .con .conTit {
+  font-size: .14rem;
+  color: #eca742;
+  margin-bottom: .1rem;
+}
+.intro .con .conIn {
+  font-size: .12rem;
+  color: #333;
+  line-height: .35rem;
+}
+.intro .inBox {
+  width: 100%;
+  background: #fff;
+}
+.btnBox {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: .18rem;
+}
+.btnBox .inBtn {
+  width: 71.73%;
+  height: .74rem;
+  margin: 0 auto;
+  background: #b92a22;
+  text-align: center;
+  line-height: .74rem;
+  color: #fff;
+  font-size: .13rem;
+  margin-bottom: .47rem;
+}
+.exam {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: .18rem;
+  background: #fff;
+  padding: 0 .25rem;
+  font-size: .13rem;
+}
+.exam img {
+  display: block;
+  width: 100%;
+}
+.exam .sub {
+  width: 100%;
+}
+.exam .sub .subTit1 {
+  color: #b92a22;
+  margin-bottom: 0.13rem;
+}
+.exam .sub .subTit2 {
+  color: #333;
+  margin-bottom: 0.13rem;
+}
+.exam .sub .subCon {
+  color: #333;
+  margin-bottom: .4rem;
+}
+.exam .time {
+  width: 100%;
+  margin-bottom: .45rem;
+}
+.exam .time .timeTit1 {
+  color: #b92a22;
+  margin-bottom: 0.13rem;
+}
+.exam .time .timeTit2 {
+  color: #333;
+  margin-bottom: 0.13rem;
+}
+.lc {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: .18rem;
+}
+.lc img {
+  display: block;
+  width: 100%;
+}
+.lc .btnBox {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 0;
+}
+.lc .btnBox .inBtn {
+  width: 71.73%;
+  height: .74rem;
+  margin: 0 auto;
+  background: #b92a22;
+  text-align: center;
+  line-height: .74rem;
+  color: #fff;
+  font-size: .13rem;
+  margin-bottom: .54rem;
+}
+.demand {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: .18rem;
+  background: #FFF;
+}
+.demand img {
+  display: block;
+  width: 100%;
+}
+.demand .demandCon {
+  width: 100%;
+  overflow: hidden;
+  padding: 0 .25rem;
+  font-size: .13rem;
+  color: #333;
+  margin-bottom: .5rem;
+}
+.demand .btnBox {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 0;
+}
+.demand .btnBox .inBtn {
+  width: 71.73%;
+  height: .74rem;
+  margin: 0 auto;
+  background: #b92a22;
+  text-align: center;
+  line-height: .74rem;
+  color: #fff;
+  font-size: .13rem;
+  margin-bottom: .54rem;
+}
+.priAge {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: .18rem;
+  background: #FFF;
+  padding-bottom: .52rem;
+}
+.priAge img {
+  display: block;
+  width: 100%;
+}
+.priAge .priCon {
+  width: 100%;
+  overflow: hidden;
+  padding: 0 .25rem;
+  font-size: .13rem;
+  color: #333;
+  margin-bottom: .4rem;
+}
+.priAge .tb1 {
+  width: 93.6%;
+  margin: 0 auto;
+}
+.midAge {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: .18rem;
+  background: #FFF;
+}
+.midAge img {
+  display: block;
+  width: 100%;
+}
+.midAge .priCon {
+  width: 100%;
+  overflow: hidden;
+  padding: 0 .25rem;
+  font-size: .13rem;
+  color: #333;
+  margin-bottom: .4rem;
+}
+.midAge .tb1 {
+  width: 93.6%;
+  margin: 0 auto;
+  margin-bottom: .4rem;
+}
+.midAge .btnBox {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 0;
+}
+.midAge .btnBox .inBtn {
+  width: 71.73%;
+  height: .74rem;
+  margin: 0 auto;
+  background: #b92a22;
+  text-align: center;
+  line-height: .74rem;
+  color: #fff;
+  font-size: .13rem;
+  margin-bottom: .44rem;
+}
+.typeQues {
+  width: 100%;
+  overflow: hidden;
+  background: #FFF;
+}
+.typeQues img {
+  display: block;
+  width: 100%;
+}
+.typeQues .tb3 {
+  width: 93.6%;
+  margin: 0 auto;
+}
+.typeQues .tb4 {
+  margin-bottom: .5rem;
+}
+.typeQues .btnBox {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 0;
+}
+.typeQues .btnBox .inBtn {
+  width: 71.73%;
+  height: .74rem;
+  margin: 0 auto;
+  background: #b92a22;
+  text-align: center;
+  line-height: .74rem;
+  color: #fff;
+  font-size: .13rem;
+  margin-bottom: .48rem;
+}
+.course {
+  width: 100%;
+  position: relative;
+  margin-bottom: .18rem;
+}
+.course .coTit {
+  width: 100%;
+  padding-top: .4rem;
+  color: #fff;
+  text-align: center;
+  height: 3.05rem;
+  background: #b92a22;
+}
+.course .coTit .tit1 {
+  font-size: .175rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: .25rem;
+}
+.course .coTit .tit2 {
+  font-size: .13rem;
+}
+.course .coBox {
+  width: 100%;
+  height: 2.2rem;
+  background: #fff;
+}
+.course img {
+  display: block;
+  width: 100%;
+}
+.course .tb5 {
+  position: absolute;
+  top: 7%;
+}
+.course .gain {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  padding-top: .32rem;
+}
+.course .gain .giTIt {
+  width: 100%;
+  text-align: center;
+  font-size: .15rem;
+  color: #b92a22;
+}
+.course .gain .btnBox {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 0;
+}
+.course .gain .btnBox .inBtn {
+  width: 71.73%;
+  height: .74rem;
+  margin: 0 auto;
+  background: #b92a22;
+  text-align: center;
+  line-height: .74rem;
+  color: #fff;
+  font-size: .13rem;
+  margin-bottom: .5rem;
+}
+.course .teGuan {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.course .teGuan img {
+  display: block;
+  width: 100%;
+}
+.course .teGuan .btnBox {
+  position: absolute;
+  bottom: 8%;
+  width: 100%;
+  overflow: hidden;
+  background: none;
+  margin-bottom: 0;
+}
+.course .teGuan .btnBox .inBtn {
+  width: 71.73%;
+  height: .74rem;
+  margin: 0 auto;
+  background: #eca742;
+  text-align: center;
+  line-height: .74rem;
+  color: #fff;
+  font-size: .13rem;
+}
+.room {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: .18rem;
+  background: #fff;
+  padding-bottom: .4rem;
+}
+.room img {
+  display: block;
+  width: 100%;
+}
+.room .roomImg {
+  width: 100%;
+  padding: 0 .24rem;
+}
+.room .roomImg img {
+  width: 49.2%;
+  height: 2.05rem;
+  float: left;
+  margin-bottom: .1rem;
+}
+.room .roomImg img:last-of-type {
+  float: right;
+}
+.teach {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  padding: 0 .25rem;
+  padding-top: .5rem;
+}
+.teach .teTit1 {
+  font-size: .15rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: .12rem;
+  text-align: center;
+}
+.teach .teTit2 {
+  text-align: center;
+  font-size: .13rem;
+  color: #333;
+  margin-bottom: .3rem;
+}
+.teach .teachAll {
+  width: 100%;
+  height: 4.98rem;
+}
+.teach .teachAll .thBox {
+  position: relative;
+  height: 3.9rem;
+}
+.teach .teachAll .thBox .teachInfo {
+  width: 100%;
+  height: 3.9rem;
+  position: relative;
+  padding: .4rem .5rem 0 .4rem;
+}
+.teach .teachAll .thBox .teachInfo .tInfoLeft {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.teach .teachAll .thBox .teachInfo .tInfoLeft img {
+  display: block;
+  width: 2.35rem;
+}
+.teach .teachAll .thBox .teachInfo .tInfoRight {
+  width: 100%;
+  height: 100%;
+  background: #b92a22;
+  padding: .23rem .15rem 0 2.1rem;
+}
+.teach .teachAll .thBox .teachInfo .tInfoRight .tName {
+  font-size: .14rem;
+  font-weight: bold;
+  color: #eca742;
+  margin-bottom: .16rem;
+}
+.teach .teachAll .thBox .teachInfo .tInfoRight .tDegree {
+  font-size: .1rem;
+  color: #fff;
+  margin-bottom: .2rem;
+}
+.teach .teachAll .thBox .teachInfo .tInfoRight .tSc {
+  font-size: .1rem;
+  color: #fff;
+}
+.teach .teachAll .swiper-pagination {
+  position: relative;
+  height: 1.09rem;
+}
+.teach .teachAll .swiper-pagination-bullet {
+  border-radius: 50%;
+  width: .13rem;
+  height: .13rem;
+  background: #e7e7e7;
+  opacity: 1;
+}
+.teach .teachAll .swiper-pagination-bullet-active {
+  background: #b92a22;
+  opacity: 1;
+}
+.teach .teachAll .swiper-pagination {
+  z-index: 0;
+}
+.teach .btnBox {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: .65rem;
+}
+.teach .btnBox .inBtn {
+  width: 71.73%;
+  height: .74rem;
+  margin: 0 auto;
+  background: #b92a22;
+  text-align: center;
+  line-height: .74rem;
+  color: #fff;
+  font-size: .13rem;
+}
+.application {
+  width: 100%;
+  overflow: hidden;
+  background: #b92a22;
+  padding: .3rem .24rem .4rem .24rem;
+}
+.application .apCon {
+  width: 100%;
+  background: #fff;
+  height: 5.05rem;
+  padding-top: .45rem;
+}
+.application .apCon .apTit {
+  width: 100%;
+  text-align: center;
+  font-size: .15rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: .15rem;
+}
+.application .apCon .apTit2 {
+  width: 100%;
+  text-align: center;
+  font-size: .13rem;
+  color: #333;
+  margin-bottom: .4rem;
+}
+.application .apCon .apInput {
+  width: 88.3%;
+  height: 2.28rem;
+  margin: 0 auto;
+  overflow: hidden;
+  font-size: 0;
+}
+.application .apCon .apInput input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none;
+  outline: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.application .apCon .apInput input {
+  width: 100%;
+  height: .74rem;
+  border-radius: .37rem;
+  background: #f0f0ff;
+  padding-left: .35rem;
+  line-height: .74rem;
+  font-size: .13rem;
+  box-sizing: border-box;
+}
+.application .apCon .apInput input::-webkit-input-placeholder {
+  color: #b1b1b1;
+}
+.application .apCon .apInput #name {
+  margin-bottom: .3rem;
+}
+.application .apCon .subBtn {
+  width: 76.5%;
+  height: .73rem;
+  margin: 0 auto;
+  background: #eca742;
+  text-align: center;
+  line-height: .73rem;
+  font-size: .13rem;
+  color: #fff;
+}
+.zx {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+.zx .tel {
+  display: block;
+  width: 50%;
+  overflow: hidden;
+  float: left;
+}
+.zx .tel img {
+  display: block;
+  width: 100%;
+}
+.zx .zxbtn {
+  width: 50%;
+  overflow: hidden;
+  float: right;
+}
+.zx .zxbtn img {
+  display: block;
+  width: 100%;
+}

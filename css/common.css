@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0
+}
+a {
+    text-decoration: none
+}
+div {
+    box-sizing: border-box
+}
+html {
+    min-width: 320px;
+    max-width: 750px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+body {
+    width: 100%;
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+}

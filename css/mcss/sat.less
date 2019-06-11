@@ -1,0 +1,643 @@
+html{
+    background: #ededed;
+}
+.head{
+    height: .94rem;
+}
+.head-fixed {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.mHead{
+    width:100%;
+    background: #333;
+    position: relative;
+    img{
+        display: block;
+        width: 100%;
+    }
+    .nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 14.6%;
+        img{
+            display: block;
+            width:100%;
+        }
+        .menu_list {
+            display: none;
+            position: absolute;
+            top: .8rem;
+            left: 0;
+            z-index: 999;
+            background-color: rgba(0,0,0,.7);
+            font-size: .12rem;
+            width: 2.08rem;
+            height: 3.97rem;
+            float: right;
+            li {
+                height: .56rem;
+                text-align: center;
+                line-height: .56rem;
+                a {
+                    display: block;
+                    text-align: center;
+                    line-height: .56rem;
+                    color: #fff;
+                    text-decoration: none;
+                    box-sizing: border-box;
+                }
+            }
+            .current_page{
+                color: #eca742;
+                a{
+                    color: #eca742;
+                }
+            }
+        }
+    }
+    .telHead{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width:41.8%;
+        height: 100%;
+        float: right;
+        a{
+            display: block;
+            width:100%;
+            height: 100%;
+            img{
+                display: block;
+                width:100%;
+            }
+        }
+    }
+}
+.banner{
+    width:100%;
+    img{
+        display: block;
+        width:100%;
+    }
+}
+.titleAll{
+    width:100%;
+    overflow: hidden;
+    background: #fff;
+    padding: .33rem .25rem;
+    
+    .titTOp{
+        width:100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: .27rem;
+    }
+    .titBottom{
+        width:100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .know,.adv,.team{
+        display: block;
+        width:30.7%;
+        height:.57rem;
+        font-size: .12rem;
+        color: #f29538;
+        text-align: center;
+        line-height: .57rem;
+    }
+    .sel{
+        color:#fff;
+    }
+}
+.intro{
+    width:100%;
+    padding-top:.36rem;
+    overflow: hidden;
+    background: #303f7a;
+    margin-bottom: .18rem;
+    .titFir{
+        text-align: center;
+        font-size: .175rem;
+        font-weight: bold;
+        font-style: italic;
+        margin-bottom: .16rem;
+        color:#fff;
+        span{
+            color:#eca742;
+        }
+    }
+    .titSm{
+        text-align: center;
+        font-size: .13rem;
+        margin-bottom: .13rem;
+        color:#fff;
+        span{
+            color:#eca742;
+        }
+    }
+    .con{
+        width:93.6%;
+        margin: 0 auto;
+        background: #fff;
+        padding: .25rem .2rem;
+        border-radius: .05rem;
+        overflow: hidden;
+        margin-bottom: .57rem;
+        .conTit{
+            font-size: .14rem;
+            color:#eca742;
+            margin-bottom: .14rem;
+        }
+        .conIn{
+            font-size: .12rem;
+            color: #303f7a;
+            line-height: .35rem;
+        }
+    }
+    .satBtn{
+        width:71.6%;
+        height:.74rem;
+        margin: 0 auto;
+        background: #eca742;
+        text-align: center;
+        line-height: .74rem;
+        color:#fff;
+        font-size: .13rem;
+        margin-bottom: .52rem;
+    }
+}
+.grade{
+    width: 100%;
+    height: 8.2rem;
+    padding-top: .4rem;
+    position: relative;
+    margin-bottom: .18rem;
+    .grTit{
+        width: 100%;
+        text-align: center;
+        font-size: .13rem;
+        color:#333;
+        margin-bottom: .02rem;
+    }
+    .grTitBot{
+        position: absolute;
+        left: 0;
+        bottom: 4%;
+        width:100%;
+        text-align:  center;
+        font-size: .13rem;
+        color:#333;
+        span{
+            font-size: .4rem;
+            color:#eca742;
+        }
+    }
+}
+.sch{
+    width: 100%;
+    height:8rem;
+    padding-top: .38rem;
+    .schTit1{
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        font-size: .15rem;
+        color:#171717;
+    }
+    .schTit2{
+        width: 100%;
+        text-align: center;
+        font-size: .13rem;
+        color:#333;
+    }
+}
+.course{
+    width: 100%;
+    overflow: hidden;
+    padding-top: .58rem;
+    background: #fff;
+    .couTit1{
+        width: 100%;
+        text-align: center;
+        font-size: .15rem;
+        font-weight: bold;
+        color:#333;
+        margin-bottom: .12rem;
+    }
+    .couTit2{
+        width: 100%;
+        text-align: center;
+        font-size: .12rem;
+        color:#333;
+        margin-bottom: .34rem;
+    }
+    .couTit3{
+        width: 100%;
+        padding: 0 .25rem;
+        font-size: .11rem;
+        color:#303f7a;
+        line-height: .4rem;
+        margin-bottom: .3rem;
+    }
+    img{
+        display: block;
+        width: 88%;
+        margin: 0 auto;
+        margin-bottom: .52rem;
+    }
+    .couBtn{
+        width:71.6%;
+        height: .74rem;
+        margin: 0 auto;
+        text-align: center;
+        line-height: .74rem;
+        margin-bottom: .5rem;
+        color:#fff;
+        background: #eca742;
+        font-size: .13rem;
+    }
+}
+.honour{
+    width:100%;
+    overflow: hidden;
+    img{
+        display: block;
+        width: 100%;
+    }
+}
+.guan{
+    width:100%;
+    position: relative;
+    .teGuan{
+        width:100%;
+        overflow: hidden;
+        position: relative;
+        img{
+            display: block;
+            width:100%;
+        }
+        .btnBox{
+            position: absolute;
+            bottom:8%;
+            width:100%;
+            overflow: hidden;
+            background: none;
+            margin-bottom: 0;
+            .inBtn{
+                width:71.73%;
+                height:.74rem;
+                margin: 0 auto;
+                background: #eca742;
+                text-align: center;
+                line-height: .74rem;
+                color:#fff;
+                font-size: .13rem;
+            }
+        }
+    }
+}
+.teach{
+    width:100%;
+    overflow: hidden;
+    background: #fff;
+    padding: 0 .25rem;
+    padding-top: .5rem;
+    margin-bottom: .18rem;
+    .teTit1{
+        font-size: .15rem;
+        color:#333;
+        font-weight: bold;
+        margin-bottom: .12rem;
+        text-align: center;
+    }
+    .teTit2{
+        text-align: center;
+        font-size: .13rem;
+        color:#333;
+        margin-bottom: .3rem;
+    }
+    .teachAll{
+        width:100%;
+        height:4.98rem;
+        .thBox{
+            position: relative;
+            height:3.9rem;
+            .teachInfo{
+                width:100%;
+                height:3.9rem;
+                position: relative;
+                padding: .4rem .5rem 0 .4rem;
+                .tInfoLeft{
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    img{
+                        display: block;
+                        width:2.35rem;
+                    }
+                }
+                .tInfoRight{
+                    width:100%;
+                    height:100%;
+                    background: #303f7a;
+                    padding:.23rem .15rem 0 2.1rem;
+                    .tName{
+                        font-size: .14rem;
+                        font-weight: bold;
+                        color:#eca742;
+                        margin-bottom: .16rem;
+                    }
+                    .tDegree{
+                        font-size: .1rem;
+                        color:#fff;
+                        margin-bottom: .2rem;
+                    }
+                    .tSc{
+                        font-size: .1rem;
+                        color:#fff;
+                    }
+                }
+            }
+        }
+        .swiper-pagination{
+            position: relative;
+            height:1.09rem;
+        }
+        .swiper-pagination-bullet{
+            border-radius: 50%;
+            width:.13rem;
+            height:.13rem;
+            background:#e7e7e7;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active{
+            background:#303f7a;
+            opacity: 1;
+        }
+        .swiper-pagination{
+            z-index: 0;
+        }
+    }
+    .btnBox{
+        width:100%;
+        overflow: hidden;
+        background: #fff;
+        margin-bottom: .65rem;
+        .inBtn{
+            width:71.73%;
+            height:.74rem;
+            margin: 0 auto;
+            background: #eca742;
+            text-align: center;
+            line-height: .74rem;
+            color:#fff;
+            font-size: .13rem;
+        }
+    }
+}
+.compare{
+    width: 100%;
+    overflow: hidden;
+    padding-top: .5rem;
+    .kcTit1{
+        width: 100%;
+        text-align: center;
+        font-size: .15rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: .01rem;
+    }
+    .kcTit2{
+        width: 100%;
+        text-align: center;
+        font-size: .13rem;
+        color: #333;
+        margin-bottom: .33rem;
+    }
+    .comNav{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: .22rem;
+        padding: 0 .43rem;
+        .comList{
+            width: 46.2%;
+            height: .64rem;
+            border:.01rem solid #303f7a;
+            border-radius: .05rem;
+            text-align: center;
+            line-height: .64rem;
+            font-size: .13rem;
+            color:#333;
+            float: left;
+        }
+        .comListOn{
+            background: #303f7a;
+            color:#fff;
+        }
+    }
+    .comCon{
+        display: none;
+        width: 100%;
+        overflow: hidden;
+        img{
+            display: block;
+            width: 88%;
+            margin: 0 auto;
+        }
+
+    }
+    .comBox{
+        width: 100%;
+        height: .64rem;
+        background: #fcfcfd;
+    }
+}
+.bm{
+    width: 100%;
+    padding-top: .39rem;
+    padding-bottom: .5rem;
+    .bmTit{
+        width: 100%;
+        text-align: center;
+        margin-bottom: .39rem; 
+        font-size: .15rem;
+        color:#fff;
+        font-weight: bold;
+    }
+    .bmBox{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-around;
+        .bmBtn{
+            width: 27.3%;
+            height: .62rem;
+            text-align: center;
+            line-height: .62rem;
+            font-size: .12rem;
+            color:#fff;
+        }
+    }
+}
+.plan{
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: .18rem;
+    padding-top: .43rem;
+    .planTit{
+        width: 100%;
+        text-align: center;
+        margin-bottom: .3rem;
+        font-weight: bold;
+        font-size: .15rem;
+        color:#333;
+    }
+    .planCon{
+        width:94%;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: .42rem;
+        padding:.27rem .27rem .2rem .27rem;
+        font-size: .12rem;
+        color:#333;
+        background: #ededf9;
+        .planConTit{
+            width: 100%;
+            margin-bottom: .29rem;
+        }
+        .planConList1{
+            width: 100%;
+            line-height: .5rem;
+        }
+    }
+    .planBox{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: .37rem;
+        display: flex;
+        justify-content: space-around;
+        .planBtn1{
+            width: 33.33%;
+            height: .6rem;
+            background: #303f7a;
+            font-size: .12rem;
+            color:#fff;
+            text-align: center;
+            line-height: .6rem;
+        }
+        .planBtn2{
+            width: 33.33%;
+            height: .6rem;
+            background: #eca742;
+            font-size: .12rem;
+            color:#fff;
+            text-align: center;
+            line-height: .6rem;
+        }
+    }
+}
+.application{
+    width:100%;
+    overflow: hidden;
+    background: #303f7a;
+    padding: .3rem .24rem .4rem .24rem;
+    .apCon{
+        width:100%;
+        background: #fff;
+        height: 5.05rem;
+        padding-top: .45rem;
+        .apTit{
+            width:100%;
+            text-align: center;
+            font-size: .15rem;
+            color:#333;
+            font-weight:bold;
+            margin-bottom: .15rem;
+        }
+        .apTit2{
+            width:100%;
+            text-align: center;
+            font-size: .13rem;
+            color:#333;
+            margin-bottom: .4rem;
+        }
+        .apInput{
+            width:88.3%;
+            height:2.28rem;
+            margin: 0 auto;
+            overflow: hidden;
+            font-size: 0;
+            input{
+                -webkit-appearance : none;
+                -moz-appearance : none;
+                background : none;
+                outline: none;
+                border-radius: 0;
+                padding:0;
+                margin: 0;
+                border: none;
+            }
+            input{
+                width:100%;
+                height:.74rem;
+                border-radius: .37rem;
+                background: #f0f0ff;
+                padding-left:.35rem;
+                line-height: .74rem;
+                font-size: .13rem;
+                box-sizing:border-box;
+            }
+            input::-webkit-input-placeholder{
+                color:#b1b1b1;
+            }
+            #name{
+                margin-bottom: .3rem;
+            }
+        }
+        .subBtn{
+            width:76.5%;
+            height:.73rem;
+            margin: 0 auto;
+            background: #eca742;
+            text-align: center;
+            line-height: .73rem;
+            font-size: .13rem;
+            color:#fff;
+        }
+    }
+}
+.zx{
+    width:100%;
+    overflow: hidden;
+    position: fixed;
+    bottom:0;
+    z-index: 1;
+    .tel{
+        display: block;
+        width:50%;
+        overflow: hidden;
+        float: left;
+        img{
+            display: block;
+            width:100%;
+        }
+    }
+    .zxbtn{
+        width:50%;
+        overflow: hidden;
+        float: right;
+        img{
+            display: block;
+            width:100%;
+        }
+    }
+}
